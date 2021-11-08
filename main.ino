@@ -11,7 +11,9 @@ void loop() {
 	// delay by a known time
 }
 
-
+void reset() {
+	// Jessy's function	
+}
 
 void updateGains() {
 	// check if we're out of bounds of current gains
