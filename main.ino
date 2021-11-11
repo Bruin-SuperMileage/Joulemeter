@@ -31,6 +31,7 @@ float readVoltage() {
 	delayMicroseconds(delay_time);
 
 	float Vout = digitalRead(M_VOLTAGE) * (5.0 / 1024);
+	digitalWrite(RES_DIVIDER, LOW);
 
 	return Vout * (R1 + R2) / (R2);
 }
