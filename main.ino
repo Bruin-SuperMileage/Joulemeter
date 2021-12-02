@@ -26,3 +26,18 @@ double readCurrent() {
 int readVoltage() {
 	
 }
+void reset() {
+  // Jessy's function 
+  if (current <= 30)
+    digitalWrite(7,LOW)
+    digitalWrite(8,LOW)
+  else if (current <=40)
+    digitalWrite(7,LOW)
+    digitalWrite(8,HIGH)
+  else if (current <=50)
+    digitalWrite(7,HIGH)
+    digitalWrite(8,LOW)
+  else if (current <=60)
+    digitalWrite(7,HIGH)
+    digitalWrite(8,HIGH)
+}
