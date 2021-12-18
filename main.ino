@@ -26,9 +26,8 @@ double readCurrent() {
 }
 
 float readVoltage() {
-	unsigned short delay_time = 4 * RC * 1e6; // in microsecnods
 	digitalWrite(RES_DIVIDER, HIGH);
-	delayMicroseconds(delay_time);
+	delayMicroseconds(DELAY_TIME);
 
 	float Vout = digitalRead(M_VOLTAGE) * (5.0 / 1024);
 	digitalWrite(RES_DIVIDER, LOW);
